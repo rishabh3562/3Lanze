@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { useLogout } from "../hooks/useLogout";
 import { useAuthContext } from "../hooks/useAuthContext";
+// import logo from "../assets/3-Lanze.png";
+import "./Navbar.css";
+
 const Navbar = () => {
   const { logout } = useLogout();
 
@@ -13,7 +16,7 @@ const Navbar = () => {
   return (
     <header>
       <div className="container">
-        <Link to="/">
+        <Link className="logo" to="/">
           <h1>3-Lanze </h1>
         </Link>
         <nav>
@@ -22,8 +25,8 @@ const Navbar = () => {
               <span className="bca">{user.blockChainAddress}</span>
               {/* leave some space */}
               <span> </span>
-              <span>{user.email}</span>
-              <button onClick={handleClick}>Log Out</button>
+              <span className="email-bca">{user.email}</span>
+              <button className="btn-log" onClick={handleClick}>Log Out</button>
             </div>
           )}
           {!user && (

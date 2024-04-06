@@ -8,6 +8,8 @@ const Home = () => {
       <Navbar2 />
       <div className="homepage-container">
         <h1>Welcome to 3-Lanze!</h1>
+        <h2>Your Skills, Your Terms, Our Platform</h2>
+      </div>
         <div className="card-grid">
           <div className="card">
             <h2>About</h2>
@@ -33,7 +35,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

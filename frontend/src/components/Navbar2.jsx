@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import './Navbar2.css';
 
 const Navbar2 = () => {
   return (
